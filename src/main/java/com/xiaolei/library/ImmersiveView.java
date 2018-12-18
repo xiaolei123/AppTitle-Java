@@ -24,12 +24,12 @@ public class ImmersiveView extends ConstraintLayout {
     }
 
     private void initEvent() {
-        final ViewTreeObserver observer = this.getViewTreeObserver();
+        ViewTreeObserver observer = this.getViewTreeObserver();
         observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
                 if (getMeasuredWidth() > 0 && getMeasuredHeight() > 0) {
-                    observer.removeOnGlobalLayoutListener(this);
+                    getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
                     int titleLocationOnScreens[] = new int[2];
                     getLocationOnScreen(titleLocationOnScreens);
