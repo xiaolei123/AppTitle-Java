@@ -3,11 +3,11 @@
 
 # kotlin 版本
 ```groovy
-implement 'com.xiaolei:AppTitle:1.0.0'
+implement 'com.xiaolei:AppTitle:1.0.1'
 ```
 # java版本
 ```groovy
-稍等
+implement 'com.xiaolei:AppTitle-java:1.0.1'
 ```
 ![运行示意图](https://raw.githubusercontent.com/xiaolei123/AppTitle/master/src/main/res/drawable-xhdpi/img_screen3.png)
 
